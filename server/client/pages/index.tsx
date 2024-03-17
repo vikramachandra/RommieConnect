@@ -21,14 +21,14 @@ export default function Home() {
       />
       <div
         style={{
-          width: "200px", // Width of the white box
-          height: "200px", // Height of the white box
-          backgroundColor: "white", // Background color of the box
-          position: "absolute", // Positioning the box absolutely inside the relative container
-          top: "50%", // Centering the box vertically
-          left: "50%", // Centering the box horizontally
-          transform: "translate(-50%, -50%)", // Adjusting the exact center position
-          zIndex: 10, // Ensuring the box is above the background image
+          width: "200px",
+          height: "200px",
+          backgroundColor: "white",
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 10,
         }}
       ></div>
     </div>
