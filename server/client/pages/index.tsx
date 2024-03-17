@@ -4,5 +4,12 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <div>hi</div>;
+  return (
+    <Image
+      src="/background.jpg"
+      alt="Green/blue background"
+      layout="fill"
+      objectFit="cover"
+    />
+  );
 }
