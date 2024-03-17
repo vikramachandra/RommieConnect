@@ -23,7 +23,7 @@ export default function Home() {
         style={{
           width: "200px",
           height: "200px",
-          backgroundColor: "white",
+          backgroundColor: "black",
           position: "absolute",
           top: "50%",
           left: "50%",
