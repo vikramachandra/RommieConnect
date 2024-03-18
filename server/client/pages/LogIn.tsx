@@ -1,3 +1,11 @@
+import Image from "next/image";
+
 export default function LogIn() {
-  return <h1>hi</h1>;
+  return (<Image
+    src="/background.webp" 
+    alt = "Green/blue background"
+    layout = "fill"
+    objectFit='cover'
+    />
+  );
 }
