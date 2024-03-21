@@ -5,7 +5,7 @@ export default function LogIn() {
   return (
     <div className={styles.container}>
       <Image
-        src="/background.jpg"
+        src="/background.webp"
         alt="Green/blue background"
         layout="fill"
         objectFit="cover"
