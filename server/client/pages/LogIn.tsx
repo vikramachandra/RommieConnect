@@ -4,6 +4,9 @@ import styles from "../styles/Login.module.css";
 export default function LogIn() {
   return (
     <div className={styles.backgroundImage}>
+      <div className={styles.topRightButtons}>
+        <button className={styles.topLogInButton}>Sign Up</button>
+      </div>
       <div className={styles.box}>
         <div className={styles.wrapper}>
           <form action="">

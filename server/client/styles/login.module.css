@@ -16,16 +16,16 @@
   background-image: url("/greenBackground.jpg");
   background-size: cover;
   background-position: center;
-  width: 100vw; /* Cover the full viewport width */
-  height: 100vh; /* Cover the full viewport height */
-  position: relative; /* Ensure this is positioned relative or absolute to cover the whole screen */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
 .box {
   width: 500px;
   height: 650px;
   background-color: #f9f6f1;
-  position: absolute;
+  position: relative; /* You had position declared twice; keep it relative */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -37,6 +37,21 @@
   align-items: center;
   padding: 40px;
   font-family: "Poppins", sans-serif;
+  opacity: 1;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 75px;
+  height: 75px;
+  background-image: url("/house.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 .loginTitle {
@@ -48,9 +63,9 @@
 }
 
 .signUpPrompt {
-  font-weight: 700; /* Adjust the weight as needed */
-  font-size: 16px; /* Adjust the size as needed */
-  color: blue; /* Optional: Adjust the color as needed */
+  font-weight: 700;
+  font-size: 16px;
+  color: blue;
 }
 
 .inputBox {
@@ -87,9 +102,9 @@
 }
 
 .accountPrompt {
-  font-size: 16px; /* Example size, adjust as needed */
-  color: black; /* Use a color that matches your design */
-  margin-bottom: 20px; /* Adds space below the text */
+  font-size: 16px;
+  color: black;
+  margin-bottom: 20px;
   font-weight: bold;
 }
 
@@ -120,4 +135,23 @@
   margin-top: 150px;
   margin-left: 40px;
   font-weight: bold;
+}
+
+.topRightButtons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.topLogInButton {
+  background-color: #ffedd8;
+  opacity: 1;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100px;
 }
